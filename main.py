@@ -4,7 +4,6 @@ def countCharacters(text):
     char_counter = Counter(text_lower)
     return char_counter
 
-
 def countWords(text):
     split_book = text.split()
     for word in split_book:
@@ -21,7 +20,6 @@ def aggregateReport(text):
     for letter, num in sorted_count:
         print(f"the '{letter}' character was found {num} times")
    
-
 def main():
     with open("books/frankenstein.txt") as f:
         file_contents = f.read()
